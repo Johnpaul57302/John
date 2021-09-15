@@ -1,21 +1,22 @@
-import java.util.Scanner;
-class Palindrome
-{
+//Program to find check if a no is palindrome or not
+
+public class Palindrome{
 	public static void main(String args[])
 	{
-		Scanner obj=new Scanner(System.in);
-		int num=obj.nextInt();
-		int rev=0;
-		int org=num;	
-		while(num!=0)
-		{
-			int digit=num%10;
-			num=num/10;
-			rev=rev*10+digit;
-		}
-		if(org==rev)
-			System.out.println("Palindrome");
-		else
-			System.out.println("Not Palindrome");				
-	}
+		
+		int x=Integer.parseInt(args[1]);
+	    a=x;
+	    r=0;
+	    while(x>0)
+	    {
+	    	int q=x%10;
+	    	r=r*10+q;
+	    	x=x/10;	    	
+	    }
+	    if(a==r)
+	    	System.out.println("Number is a Palindrome ");
+	    else
+	    	System.out.println("Not a Palindrom ");
+
+}
 }
